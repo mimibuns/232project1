@@ -4,14 +4,26 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        // initializes a new object with the corresponding variables
+        Student s1 = new Student("jenna", 15, 100);
+        //using that object passes it to drive
+        s1.drive();
+
+
+        System.out.println(s1.name + s1.score);
+        //System.out.println(super.name);
+
         // array is made to hold students scores
         ArrayList<Integer> numbers = new ArrayList<>();
+
+        String userName;
+        int userScore;
 
         // loop to allow the teacher to enter multiple assignment scores
         while (true) {
             Scanner scnr = new Scanner(System.in);
             System.out.println("Please enter name or press enter to stop:");
-            String userName = scnr.nextLine();
+            userName = scnr.nextLine();
 
             // ends code
             if (userName.isEmpty()) {
@@ -19,7 +31,6 @@ public class Main {
             }
 
             System.out.println("Please enter their score:");
-            int userScore;
 
             // code will stop if no int was put in
             if (scnr.hasNextInt()){
@@ -34,7 +45,7 @@ public class Main {
 
             // created an instance of the class student
             //using the input, sees what grade they get
-            Student StuOne = new Student(userName, userScore);
+            Student StuOne = new Student(userName, 21, userScore);
             StuOne.calcGrade(userName, userScore);
         }
         //gets average and displays it
