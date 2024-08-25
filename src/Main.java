@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         // initializes a new object with the corresponding variables
-        Student s1 = new Student("Jenna", 15, 100);
+        Student s1 = new Student("Jenna", 15, "wang", 100);
         //using that object passes it to drive
         s1.drive();
 
@@ -13,7 +13,7 @@ public class Main {
         s2.drink(s2.age);
 
 
-        System.out.println(s1.name + s1.score);
+        System.out.println(s1.firstName + s1.userScore);
         //System.out.println(super.name);
 
         // array is made to hold students scores
@@ -48,7 +48,7 @@ public class Main {
 
             // created an instance of the class student
             //using the input, sees what grade they get
-            Student StuOne = new Student(userName, 21, userScore);
+            Student StuOne = new Student(userName, userScore);
             StuOne.calcGrade(userName, userScore);
         }
         //gets average and displays it
