@@ -10,13 +10,9 @@ public class Student extends Person{
         this.score = score;
     }
 
-    Student(int legs){
-        super(legs);
-    }
-
     Student(){
-        this.age = age;
-        this.lastName = lastName;
+        this.age = 40;
+        this.lastName = "moses";
     }
 
     //gets average
