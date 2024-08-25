@@ -5,9 +5,12 @@ public class Main {
     public static void main(String[] args) {
 
         // initializes a new object with the corresponding variables
-        Student s1 = new Student("jenna", 15, 100);
+        Student s1 = new Student("Jenna", 15, 100);
         //using that object passes it to drive
         s1.drive();
+
+        Student s2 = new Student();
+        s2.drink(s2.age);
 
 
         System.out.println(s1.name + s1.score);

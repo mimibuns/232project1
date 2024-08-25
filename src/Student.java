@@ -2,7 +2,6 @@ import java.util.ArrayList;
 //made student class that can inherit from the person class by using extends
 public class Student extends Person{
     String name;
-    int age;
     int score;
 
     //parameterised constructor, input is assigned to a name
@@ -11,8 +10,11 @@ public class Student extends Person{
         this.score = score;
     }
 
-    Student(String name, int age, String lastName){
-        this.name = name;
+    Student(int legs){
+        super(legs);
+    }
+
+    Student(){
         this.age = age;
         this.lastName = lastName;
     }
