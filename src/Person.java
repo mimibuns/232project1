@@ -1,17 +1,11 @@
 public class Person {
     String lastName;
     int age;
-    int arms;
 
     //parameterised constructor
     Person (String lastName, int age){
         this.lastName = lastName;
         this.age = age;
-    }
-
-
-    Person (int arms){
-        this.arms = arms;
     }
 
     //default constructor
@@ -31,12 +25,12 @@ public class Person {
         }
     }
 
-    public void drink(int age){
-        if (this.age >= 21){
-            System.out.println(lastName + " is old enough to drink");
+    public void military(int age){
+        if (this.age >= 18){
+            System.out.println(lastName + " is old enough to be in the military");
         }
         else{
-            System.out.println(lastName + " is not old enough to drink");
+            System.out.println(lastName + " is not old enough to be in the military");
         }
     }
 }

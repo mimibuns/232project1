@@ -7,27 +7,24 @@ public class Student extends Person{
 
     //parameterised constructor, input is assigned to a name
     Student(String firstName, int userScore, String lastName, int age ) {
+        //calls a constructor from the parent class
         super(lastName, age);
         this.userScore = userScore;
         this.firstName = firstName;
-
     }
 
+    //parameterised constructor
     Student(String userName, int userScore){
         this.userName = userName;
         this.userScore = userScore;
     }
 
+    //default constructor
     Student(){
-        super("lastName", 50);
+        super("Ken", 50);
         userName = "mimi";
         firstName = "selena";
         userScore = 100;
-        /*
-        super(lastName, age);
-        age = 40;
-        lstName = "moses";
-         */
     }
 
     //gets average
@@ -37,7 +34,6 @@ public class Student extends Person{
         for (int number : numbers){
             sum += number;
         }
-
         return sum / numbers.size();
     }
 

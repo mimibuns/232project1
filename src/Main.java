@@ -10,11 +10,7 @@ public class Main {
         s1.drive();
 
         Student s2 = new Student();
-        s2.drink(s2.age);
-
-
-        System.out.println(s1.firstName + s1.userScore);
-        //System.out.println(super.name);
+        s2.military(s2.age);
 
         // array is made to hold students scores
         ArrayList<Integer> numbers = new ArrayList<>();
